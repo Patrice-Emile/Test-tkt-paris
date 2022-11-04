@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+.companyCategoryTag {
+  color: "#4E59FF";
+}
+.companyContainer {
+  height: 96px;
+  width: 1060px;
+}
+.listCompany {
+  margin: 0 40px 0 40px;
+}
+p {
+  size: 14px;
+  font: "Avenir";
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 6%;
+}
+
+@layer base {
+  main {
+    @apply justify-center w-4/5 m-auto;
+  }
+}
+
+@layer components {
+  .companyContainer {
+    @apply flex justify-around;
+  }
+  .infoCompanyContainer {
+    @apply flex w-1/3;
+  }
+}
